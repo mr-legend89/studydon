@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Seekho Bhai</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background: linear-gradient(120deg, #2c3e50, #4ca1af);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            overflow: hidden;
+        }
+        .container {
+            background: rgba(28, 40, 51, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            position: relative;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+            border: 3px solid rgba(255, 255, 255, 0.6);
+            font-family: 'Georgia', serif;
+            animation: float 3s ease-in-out infinite, rotate 10s linear infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+        }
+        .download-btn:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 16px;
+            opacity: 0.9;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">SB</div>
+        <h1>Download Seekho Bhai</h1>
+        <p>Enhance your learning experience with Seekho Bhai. Click the button below to download.</p>
+        <a href="seekho-bhai.apk" class="download-btn">Download Now</a>
+        <div class="footer">By Insane_Codr</div>
+    </div>
+
+    <script>
+        document.querySelector('.download-btn').addEventListener('click', function() {
+            alert('Your download will start shortly!');
+        });
+    </script>
+</body>
+</html>
